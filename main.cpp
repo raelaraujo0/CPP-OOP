@@ -15,29 +15,32 @@ class Business
 		int valuation;
 
 	public:
-		void setName(string name) { this->name = name; }
+
+	/*	void setName(string name) { this->name = name; }
 		void setFoundationYear(int foundationYear) { this->foundationYear = foundationYear; }
 		void setValuation(int valuation) { this->valuation = valuation; }
+		old constructor
+	*/
+
+	Business(string Name, int FoundationYear, int Valuation){
+		name = Name;
+		foundationYear = foundationYear;
+		valuation = Valuation;
+	}
 
 		void printFullBusiness() { 
-			cout << name << " " << foundationYear << " " << valuation << endl;
+			cout << name <<  endl;
+			cout << foundationYear <<  endl;
+			cout << valuation <<  endl;
 		}
 };
 
 int main()
 {
-	Business bus_eins;
-
-	bus_eins.setName("lorem");
-	bus_eins.setFoundationYear(1977);
-	bus_eins.setValuation(2000000);
+	Business bus_eins = Business("lorem", 1977, 20000);
 	bus_eins.printFullBusiness();
 
-	Business bus_zwei;
-
-	bus_zwei.setName("nsei");
-	bus_zwei.setFoundationYear(1982);
-	bus_zwei.setValuation(1010110011010);
+	Business bus_zwei = Business("nsei", 1982, 10000);
 	bus_zwei.printFullBusiness();
 
 	return 0;
