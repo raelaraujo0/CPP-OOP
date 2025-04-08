@@ -1,39 +1,12 @@
 #include <iostream> // need this to use cout function and other
 #include <string>
 #include "employee.h"
+#include "business.h"
 
 using namespace std; // using this lets us use names from the standard library
 
 /* In this file, I'll try to learn OOP in C++
 and learn on practice VIM */
-
-class Business 
-{
-	private:
-		string name;
-		int foundationYear;
-		int valuation;
-
-	public:
-
-	/*	void setName(string name) { this->name = name; }
-		void setFoundationYear(int foundationYear) { this->foundationYear = foundationYear; }
-		void setValuation(int valuation) { this->valuation = valuation; }
-		old constructor
-	*/
-
-	Business(string Name, int FoundationYear, int Valuation){
-		name = Name;
-		foundationYear = foundationYear;
-		valuation = Valuation;
-	}
-
-		void printFullBusiness() { 
-			cout << name <<  endl;
-			cout << foundationYear <<  endl;
-			cout << valuation <<  endl;
-		}
-};
 
 int main()
 {
@@ -42,6 +15,13 @@ int main()
 
 	Business bus_zwei = Business("nsei", 1982, 10000);
 	bus_zwei.printFullBusiness();
+
+
+	Employee emp_one = Employee("Maquiavel", "27/07/2018", 1412);
+	emp_one.printFullEmployee();
+
+	Employee emp_two = Employee("Orwell", "01/01/1984", 1412);
+	emp_two.printFullEmployee();
 
 	return 0;
 }

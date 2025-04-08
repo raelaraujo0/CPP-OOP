@@ -1,27 +1,19 @@
 #include <iostream>
 #include <string>
+#include "employee.h" 
 
 using namespace std;
 
-class Employee
+Employee::Employee(string Name, string EntryDate, int Salary)
 {
-	private:
-		string name;
-		string entryDate;
-		int salary;
-	public:
-	/*	void getName(string name) {this->name = name;}
-		void getEntryDate(string entryDate) {this->entryDate = entryDate;}
-		void getSalary(int salary) {this->salary = salary;}
-	*/
+    name = Name;
+    entryDate = EntryDate;
+    salary = Salary;
+}
 
-	Employee(string Name, string EntryDate, int Salary){
-		name = Name;
-		entryDate = EntryDate;
-		salary = Salary;
-	}
-
-		void printFullEmployee(){
-			cout << name <<  " " <<  entryDate << " " << salary << " " <<  endl;
-		}
-};
+void Employee::printFullEmployee()
+{
+    cout << name << endl;
+    cout << entryDate << endl;
+    cout << salary << endl;
+}
