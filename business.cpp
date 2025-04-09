@@ -6,7 +6,7 @@ using namespace std;
 
 Business::Business(string Name, int FoudationYear, int Valuation)
 {
-	mame = Name;
+	name = Name;
 	foundationYear = FoudationYear;
 	valuation = Valuation;
 }
