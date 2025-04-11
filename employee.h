@@ -1,6 +1,5 @@
 #ifndef EMPLOYEE_H
 #define EMPLOYEE_H
-
 #include <string>
 
 using namespace std;
@@ -16,7 +15,7 @@ class Employee
 		void setName(string name){this->name = name;}
 		string getName(string name){
 			if (name != " ")
-			return name;
+				return name;
 		};
 
 		void setEntryDate(string entryDate){this->entryDate = entryDate;}
@@ -28,7 +27,7 @@ class Employee
 		void setSalary(int salary){this->salary = salary;}
 		int getSalary(int salary){
 			if (salary != 0)
-			return salary;
+				return salary;
 		};	
 
 		Employee(string name, string entryDate, int salary);

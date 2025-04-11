@@ -15,19 +15,19 @@ class Business
 		void getName(string name){this->name = name;}
 		string setName(string name){
 			if (name != " ")
-			return name;
+				return name;
 		}
 
 		void getFoundationYear(int foundationYear){this->foundationYear = foundationYear;}
 		int setFoundationYear(int foundationYear){
 			if (foundationYear != 0000 || 0)
-			return foundationYear;
+				return foundationYear;
 		}
 
         void getValuation(int valuation){this->valuation = valuation;}
         int setValuation(int valuation){
             if (valuation != 0)
-            return valuation;
+            	return valuation;
         }
 
 		Business(string name, int foundationYear, int valuation);
