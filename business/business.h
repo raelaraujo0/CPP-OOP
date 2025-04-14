@@ -9,7 +9,7 @@ class Business
 	private:
 		string name;
 		int foundationYear;
-		int valuation;
+		float valuation;
         bool itsClosed;
 
 	public:
@@ -25,8 +25,8 @@ class Business
 				return foundationYear;
 		}
 
-        void getValuation(int valuation){this->valuation = valuation;}
-        int setValuation(int valuation){
+        void getValuation(float valuation){this->valuation = valuation;}
+        float setValuation(float valuation){
             if (valuation != 0)
             	return valuation;
         }
@@ -44,7 +44,7 @@ class Business
             itsClosed = true;
         }
 
-		Business(string name, int foundationYear, int valuation, bool itsClosed);
+		Business(string name, int foundationYear, float valuation, bool itsClosed);
 
 		void printFullBusiness();
 };

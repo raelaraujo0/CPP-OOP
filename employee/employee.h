@@ -9,7 +9,7 @@ class Employee
 	private:
 		string name;
 		string entryDate;
-		int salary;
+		float salary;
         bool hasLeave;
 
 	public:
@@ -25,8 +25,8 @@ class Employee
                 return entryDate;
 		};		
 
-		void setSalary(int salary){this->salary = salary;}
-		int getSalary(int salary){
+		void setSalary(float salary){this->salary = salary;}
+		float getSalary(float salary){
 			if (salary != 0)
 				return salary;
 		};
@@ -40,7 +40,7 @@ class Employee
             hasLeave = true;
         };
 
-		Employee(string name, string entryDate, int salary, bool hasLeave);
+		Employee(string name, string entryDate, float salary, bool hasLeave);
 
 		void printFullEmployee();
 };

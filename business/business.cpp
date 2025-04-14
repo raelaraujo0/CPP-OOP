@@ -4,7 +4,7 @@
 
 using namespace std;
 
-Business::Business(string Name, int FoudationYear, int Valuation, bool ItsClosed)
+Business::Business(string Name, int FoudationYear, float Valuation, bool ItsClosed)
 {
 	name = Name;
 	foundationYear = FoudationYear;

@@ -4,12 +4,22 @@
 
 using namespace std;
 
-Employee::Employee(string Name, string EntryDate, int Salary, bool HasLeave)
+Employee::Employee(string Name, string EntryDate, float Salary, bool HasLeave)
 {
     name = Name;
     entryDate = EntryDate;
     salary = Salary;
     hasLeave = HasLeave;
+}
+
+void Employee::insertDatas()
+{
+    cout << "Insert name: "
+    cin >> name; cout << endl;
+    cout << "Insert entry date: "
+    cin >> entryDate; cout << endl;
+    cout << "Insert employee's salary: "
+    cin >> salary; cout << endl;
 }
 
 void Employee::printFullEmployee()
@@ -20,3 +30,4 @@ void Employee::printFullEmployee()
     cout << hasLeave << endl;
     cout << endl;
 }
+
