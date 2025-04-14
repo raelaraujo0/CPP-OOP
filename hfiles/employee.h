@@ -10,6 +10,7 @@ class Employee
 		string name;
 		string entryDate;
 		int salary;
+        bool hasLeave;
 
 	public:
 		void setName(string name){this->name = name;}
@@ -28,9 +29,18 @@ class Employee
 		int getSalary(int salary){
 			if (salary != 0)
 				return salary;
-		};	
+		};
 
-		Employee(string name, string entryDate, int salary);
+        void getHasLeave(bool hasLeave){this->hasLeave = hasLeave;}
+        bool setHasLeave(bool hasLeave){
+            return hasLeave;
+        }
+
+        void quitOut(bool hasLeave){
+            hasLeave = true;
+        };
+
+		Employee(string name, string entryDate, int salary, bool hasLeave);
 
 		void printFullEmployee();
 };

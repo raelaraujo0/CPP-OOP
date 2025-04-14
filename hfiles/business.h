@@ -10,6 +10,7 @@ class Business
 		string name;
 		int foundationYear;
 		int valuation;
+        bool itsClosed;
 
 	public:
 		void getName(string name){this->name = name;}
@@ -30,7 +31,20 @@ class Business
             	return valuation;
         }
 
-		Business(string name, int foundationYear, int valuation);
+        void getItsClosed(bool itsClosed){this->itsClosed = itsClosed;}
+        bool setItsClosed(bool itsClosed){
+            return itsClosed;
+        }
+        
+        void openCompany(bool istClosed){
+            itsClosed = false;
+        }
+
+        void closeCompany(){
+            itsClosed = true;
+        }
+
+		Business(string name, int foundationYear, int valuation, bool itsClosed);
 
 		void printFullBusiness();
 };
