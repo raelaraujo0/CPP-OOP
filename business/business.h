@@ -46,6 +46,8 @@ class Business
 
 		Business(string name, int foundationYear, float valuation, bool itsClosed);
 
+		void insertBusinessDatas();
+
 		void printFullBusiness();
 };
 

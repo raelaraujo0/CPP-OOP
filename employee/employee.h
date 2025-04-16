@@ -42,6 +42,8 @@ class Employee
 
 		Employee(string name, string entryDate, float salary, bool hasLeave);
 
+		void insertEmployeeDatas();
+
 		void printFullEmployee();
 };
 

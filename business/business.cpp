@@ -12,6 +12,16 @@ Business::Business(string Name, int FoudationYear, float Valuation, bool ItsClos
     itsClosed = ItsClosed;
 }
 
+void Employee::insertBusinessDatas()
+{
+    cout << "Insert name: ";
+    cin >> name; cout << endl;
+    cout << "Insert foundation year: ";
+    cin >> foundationYear; cout << endl;
+    cout << "Insert valuation: ";
+    cin >> valuation; cout << endl;
+}
+
 void Business::printFullBusiness()
 {
 	cout << name <<  endl;

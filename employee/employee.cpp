@@ -12,13 +12,13 @@ Employee::Employee(string Name, string EntryDate, float Salary, bool HasLeave)
     hasLeave = HasLeave;
 }
 
-void Employee::insertDatas()
+void Employee::insertEmployeetDatas()
 {
-    cout << "Insert name: "
+    cout << "Insert name: ";
     cin >> name; cout << endl;
-    cout << "Insert entry date: "
+    cout << "Insert entry date: ";
     cin >> entryDate; cout << endl;
-    cout << "Insert employee's salary: "
+    cout << "Insert employee's salary: ";
     cin >> salary; cout << endl;
 }
 
